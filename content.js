@@ -29,9 +29,7 @@ function injectCustomSpeedOptions() {
     item.setAttribute('tabindex', '0');
 
     item.innerHTML = `
-      <div class="ytp-menuitem-label">${speed}</div>
-      <div class="ytp-menuitem-content">${speed}x</div>
-    `;
+      <div class="ytp-menuitem-label">${speed}</div>`;
 
     item.onclick = () => {
       const video = document.querySelector('video');
